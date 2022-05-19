@@ -68,13 +68,21 @@ public class DiceGame
         p2Roll = player2.RollDice();
     }
 
-    public void EndGame()
+    public void VerifyGameSetScore()
     {
         bool verifyGameSetScore = CheckScore(p1Score, p2Score) == true;
 
         if (verifyGameSetScore)
         {
             continueGame = false;
+        }
+    }
+
+    public void EndGame()
+    {
+        if (continueGame == false)
+        {
+            DisplayWinner();
         }
     }
 
@@ -86,13 +94,10 @@ public class DiceGame
             PlayersRoll();
             CompareRolls(p1Roll, p2Roll);
             CheckScore(p1Score, p2Score);
-            EndGame();
+            VerifyGameSetScore();
         } while (continueGame);
 
-        if (continueGame == false)
-        {
-            DisplayWinner();
-        }
+        EndGame();
     }
 }
 
