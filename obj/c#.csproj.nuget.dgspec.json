@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tmathews\\Desktop\\c#\\c#.csproj": {}
+    "C:\\Users\\tmathews\\Desktop\\war-dice-game\\c#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tmathews\\Desktop\\c#\\c#.csproj": {
+    "C:\\Users\\tmathews\\Desktop\\war-dice-game\\c#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tmathews\\Desktop\\c#\\c#.csproj",
+        "projectUniqueName": "C:\\Users\\tmathews\\Desktop\\war-dice-game\\c#.csproj",
         "projectName": "c#",
-        "projectPath": "C:\\Users\\tmathews\\Desktop\\c#\\c#.csproj",
+        "projectPath": "C:\\Users\\tmathews\\Desktop\\war-dice-game\\c#.csproj",
         "packagesPath": "C:\\Users\\tmathews\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tmathews\\Desktop\\c#\\obj\\",
+        "outputPath": "C:\\Users\\tmathews\\Desktop\\war-dice-game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tmathews\\AppData\\Roaming\\NuGet\\NuGet.Config"

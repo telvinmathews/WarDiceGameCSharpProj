@@ -1,23 +1,28 @@
 public class DiceGame
 {
-    public int p1Score = 0;
-    public int p2Score = 0;
-    public int player1;
-    public int player2;
-    public bool continueGame = true;
+    public int p1Score;
+    public int p2Score;
+    public bool continueGame;
+    public Player player1;
+    public Player player2;
+    public int p1Roll;
+    public int p2Roll;
 
-    // string rollNumString = diceRoll.ToString();
-    // System.Console.WriteLine(diceRoll);
-    public static int RollDice()
+
+
+    public DiceGame()
     {
-        Random rnd = new Random();
-        int num = rnd.Next(1, 6);
-        return num;
+        player1 = new Player();
+        player2 = new Player();
+        p1Score = player1.getScore();
+        p2Score = player2.getScore();
+        continueGame = true;
     }
 
     public void CompareRolls(int p1Roll, int p2Roll)
     {
         bool p1WinsRound = p1Roll > p2Roll;
+
         if (p1WinsRound)
         {
             p1Score += 1;
@@ -59,8 +64,8 @@ public class DiceGame
 
     public void PlayersRoll()
     {
-        player1 = RollDice();
-        player2 = RollDice();
+        p1Roll = player1.RollDice();
+        p2Roll = player2.RollDice();
     }
 
     public void EndGame()
@@ -74,12 +79,12 @@ public class DiceGame
     }
 
 
-    public void Rungame()
+    public void RunGame()
     {
         do
         {
             PlayersRoll();
-            CompareRolls(player1, player2);
+            CompareRolls(p1Roll, p2Roll);
             CheckScore(p1Score, p2Score);
             EndGame();
         } while (continueGame);

@@ -1,2 +1,2 @@
 ﻿DiceGame diceGame = new DiceGame();
-diceGame.Rungame();
+diceGame.RunGame();
